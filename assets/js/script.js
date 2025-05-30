@@ -17,22 +17,7 @@ const fetchInfo = async (url) => {
         console.log("Ocurrió un error:", error);
     }
 }
-const conocerMas = async (id)=>{
-    try {
-        const respon = await fetch(`${urlDBZ}/${id}`);
 
-        if (!respon.ok) {
-            throw new Error("Algo salió mal. Inténtelo más tarde :/");
-        }
-
-        const data = await respon.json();
-
-        alert(data.description);
-
-    } catch (error) {
-        console.log("Ocurrió un error:", error);
-    }
-}
 
 boton_mostrar.addEventListener("click", async () => {
     const personajes = await fetchInfo(urlDBZ);
@@ -57,10 +42,3 @@ boton_mostrar.addEventListener("click", async () => {
     });
 })
 
-info.addEventListener("click",(e)=>{
-    if (e.target.classList.contains("btn-conocer-mas")) {
-    const cardPadre =  e.target.closest(".col-3");
-    const id = cardPadre.dataset.id
-    conocerMas(id);
-    }
-})
