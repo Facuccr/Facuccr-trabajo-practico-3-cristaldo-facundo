@@ -1,32 +1,51 @@
 body {
-  background-image: url("/assets/img/fondogok.jpg");
+  background-image: url("/assets/img/dragon-ball-dragon-ball-z-island-house-palm-trees-hd-wallpaper-preview.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+.col-3.mb-4{
+background-color: rgb(27, 94, 90);
+} 
+.custom-navbar {
+    background-color: #2a515f; 
+  }
+  
+  
 .col-3 {
   min-height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid;
   background-color: rgb(255, 255, 255);
-  color: rgb(255, 164, 78);
+  
+  border-radius: 15px;
+  border-left: 6px solid rgb(0, 157, 189);
+  border-bottom: 6px solid rgb(0, 157, 189);
 }
-
+.card.h-100{
+    border: none;
+    background-color: rgba(27, 94, 90, 0.548);
+    color: orange;
+}
 /* Imagen */
 .col-3 .card-img-top {
   max-height: 700px;
-  width: 50%;
+  width: 40%;
   object-fit: cover;
 }
 .card-img-top {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  transition: transform 0.3s ease;
+  
 }
+.card-img-top:hover {
+    transform: scale(1.1);
+  }
 #contenedor-info {
   gap: 2rem;
 }

@@ -11,18 +11,22 @@
 </head>
 
 <body>
-  <nav class="navbar bg-dark navbar-dark px-4 mb-4">
-    <a class="navbar-brand" href="#">Dragon Ball Z API</a>
-    <form class="d-flex" id="form-busqueda">
-      <input class="form-control me-2" type="search" placeholder="Buscar personaje" id="input-busqueda">
-      <button class="btn btn-outline-light" type="submit">Buscar</button>
-      <button type="button" id="resetBtn" class="btn btn-secondary">Borrar</button>
-    </form>
+  <nav class="navbar custom-navbar navbar-dark px-4 mb-4">
+    <div class="container-fluid justify-content-between">
+      <a class="navbar-brand mx-auto fs-3 fw-semibold text-warning" href="#">Dragon Ball Z API</a>
+      <form class="d-flex" id="form-busqueda">
+        <input class="form-control me-2" type="search" placeholder="Buscar personaje" id="input-busqueda">
+        <button class="btn btn-warning me-2" type="submit">Buscar</button>
+        <button type="button" id="resetBtn" class="btn btn-warning">Borrar</button>
+      </form>
+    </div>
   </nav>
   
-    <h1>Personajes de Dragon Ball</h1>
+  
+  <h1 class="text-center my-4 text-warning fw-bold display-4">Personajes de Dragon Ball</h1>
+
     <div class="text-center my-3">
-      <button class="btn btn-primary" id="btn-mostrar">Mostrar Personajes</button>
+      <button class="btn btn-warning " id="btn-mostrar">Mostrar Personajes</button>
     </div>
     
 
